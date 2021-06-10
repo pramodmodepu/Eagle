@@ -1,0 +1,27 @@
+<!--{{data | safe}}-->
+
+
+
+<!--{{data}}-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="keyword1,keyword2,keyword3,etc." name="keywords">
+<meta content="A short description." name="description">
+<title>Title of the Page</title>
+</head>
+<body onload="OnLoad()">
+<a style="font-weight:bold;font-size: 120%;">Personal Question & Answer Search Engine</a> <input id="KBName" type="text" placeholder="Name of Knowledge Base">
+<div class="autocomplete" id="autocomplete" style="width:300px;">
+   <input id="myQuestion" type="text" name="myQuestion" placeholder="Question">
+</div>
+<br><br><br><textarea style="width:100%;height:50px;border-width: 0;" id="text1" placeholder="Answer will appear here."></textarea>
+<button onclick="SetAnswer()">Answer</button> <button onclick="RemoveQuestion()">Remove Question</button> <button onclick="RemoveQuestions()">Clear questions.</button> &nbsp <button id="Backup">Backup</button> <a download="MyQnAFile.txt" id="downloadlink" style="display: none;">Download</a> <button style="display:initial;" onclick="document.getElementById('getFile').click()">Restore</button>
+<textarea id="Text2" style="display:none;">Used while sending data to text file.</textarea>
+<input type='file' id="getFile" style="display:none;" accept='text/plain' onchange='openFile(event)'>
+<script>
+//Put the JavaScript below between the script tags.
+</script>
+</body>
+</html>

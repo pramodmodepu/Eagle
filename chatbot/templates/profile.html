@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+  Welcome {{ name }}!
+</h1>
+
+  </a>
+  <a href="{{ url_for('main.add') }}" class="navbar-item">
+      Add Training Phrases
+  </a>
+    </a>
+  <a href="{{ url_for('main.upload') }}" class="navbar-item">
+      Upload File
+  </a>
+{% endblock %}
